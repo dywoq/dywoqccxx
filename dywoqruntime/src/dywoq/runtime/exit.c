@@ -10,7 +10,7 @@ _DYWOQCCXX_RUNTIME_EXPORT void dywoqccxx_runtime_exit(unsigned int __code) {
 #if _WIN32
    ExitProcess(__code);
 #elif __unix__
-   _exit(__code);
+   _exit((int)__code);
 #else
    while (true) {
    }
