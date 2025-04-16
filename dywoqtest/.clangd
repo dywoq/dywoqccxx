@@ -1,3 +1,4 @@
 CompileFlags:
-    Add: [--std=c++03]
+    Add: [--std=c23, -xc]
+    Remove: [--xc++]
     
