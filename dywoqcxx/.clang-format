@@ -1,0 +1,47 @@
+BasedOnStyle: LLVM
+
+Standard: Latest
+ColumnLimit: 100
+IndentWidth: 3
+TabWidth: 3
+UseTab: Never
+
+AlignAfterOpenBracket: Align
+SpaceBeforeCpp11BracedList: true
+BreakAfterAttributes: Always
+BreakArrays: true
+
+AlwaysBreakAfterReturnType: All
+BreakConstructorInitializersBeforeComma: true
+
+AlignEscapedNewlines: Right
+AlignOperands: AlignAfterOperator
+AlignTrailingComments: true
+PointerAlignment: Left
+
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortFunctionsOnASingleLine: All
+AllowShortLambdasOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+IndentWrappedFunctionNames: false
+IndentRequires: true
+
+BreakInheritanceList: BeforeColon
+BreakBeforeConceptDeclarations: true
+
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: Always
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+
+AlwaysBreakTemplateDeclarations: Yes
+
+BinPackArguments: false
+BinPackParameters: false
+
+IndentPPDirectives: AfterHash
+
+InsertTrailingCommas: Wrapped
+AllowShortCaseLabelsOnASingleLine: true
+IndentCaseLabels: true
