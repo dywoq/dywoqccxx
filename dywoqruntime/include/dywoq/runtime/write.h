@@ -7,11 +7,8 @@
 extern "C" {
 #endif
 
-_DYWOQCCXX_RUNTIME_EXPORT void
-dywoqccxx_runtime_write(const char* __msg);
-
-_DYWOQCCXX_RUNTIME_EXPORT void
-dywoqccxx_runtime_writeln(const char* __msg);
+_DYWOQCCXX_RUNTIME_EXPORT void dywoqccxx_runtime_write(const char* __msg);
+_DYWOQCCXX_RUNTIME_EXPORT void dywoqccxx_runtime_writeln(const char* __msg);
 
 #if __cplusplus
 }

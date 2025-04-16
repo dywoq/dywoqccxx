@@ -11,7 +11,6 @@ extern "C" {
 #   define _DYWOQCCXX_RUNTIME_EXPORT __attribute__((visibility("default")))
 #endif
 
-
 #if __cplusplus
 }
 #endif

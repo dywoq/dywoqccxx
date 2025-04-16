@@ -12,8 +12,7 @@ typedef unsigned long long __size_t;
 typedef unsigned int __size_t;
 #endif
 
-__size_t
-__strlen(const char* __str) {
+__size_t __strlen(const char* __str) {
    __size_t __len = 0;
    while (__str[__len] != '\0') {
       ++__len;
@@ -21,8 +20,7 @@ __strlen(const char* __str) {
    return __len;
 }
 
-_DYWOQCCXX_RUNTIME_EXPORT void
-dywoqccxx_runtime_write(const char* __msg) {
+_DYWOQCCXX_RUNTIME_EXPORT void dywoqccxx_runtime_write(const char* __msg) {
 #if _WIN32
    DWORD __written = 0;
    HANDLE __h_out = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -32,8 +30,7 @@ dywoqccxx_runtime_write(const char* __msg) {
 #endif
 }
 
-_DYWOQCCXX_RUNTIME_EXPORT void
-dywoqccxx_runtime_writeln(const char* __msg) {
+_DYWOQCCXX_RUNTIME_EXPORT void dywoqccxx_runtime_writeln(const char* __msg) {
    dywoqccxx_runtime_write(__msg);
 #if _WIN32
    const char newline[] = "\r\n";
